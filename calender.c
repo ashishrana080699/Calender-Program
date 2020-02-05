@@ -30,19 +30,7 @@ int main(int argc, char* argv[]){
     char choice;
     Note note;
     FILE *fp;
-   // int gdriver=DETECT,gmode;
-    // int col;
     clrscr();
-   //
-   /*
-   initgraph(&gdriver,&gmode,"");
-
-    for(col=1;col<=5;col++)
-    {
-    setbkcolor(col);
-    }
-     */
-
     fp = fopen("note.bin", "r");
     if (fp == NULL) {
       fp = fopen("note.bin", "w");
@@ -101,11 +89,6 @@ int main(int argc, char* argv[]){
 	break;
       }
     }
-
-  //  return 0;
-   // getch();
-   // closegraph();
-  //  getch()
 }
 
 int isLeapYear( int y ){
